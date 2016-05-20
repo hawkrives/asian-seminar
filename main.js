@@ -27,7 +27,7 @@ let survey = {}
 
 function prepareWorld() {
     return new Promise((resolve, reject) => {
-        d3.json('./world-atlas/topo/world-110m.json', (err, w) => {
+        d3.json('./data/world-110m.json', (err, w) => {
             if (err) reject(err)
             world = w;
             resolve()
