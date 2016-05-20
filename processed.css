@@ -9,11 +9,17 @@ body {
   font-size: 16px;
   line-height:  1.35em;
   text-align: justify;
-  hyphens: auto;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+
+  display: -ms-flexbox;
 
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 blockquote {
@@ -100,14 +106,19 @@ p + p {
 
 
 h-map {
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -ms-flex-align: center;
+        align-items: center;
     position: relative;
 }
 h-map.horizontal {
-    flex-flow: row wrap;
-    justify-content: space-around;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 h-map > h2 {
@@ -120,15 +131,21 @@ h-map > h2 {
 
 h-tabs {
   /* margin-top: 1em; */
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
+	-ms-flex-flow: row wrap;
+	    flex-flow: row wrap;
+	-ms-flex-pack: center;
+	    justify-content: center;
 	margin: 0 1em 0.5em;
 	max-width: 40em;
 }
 h-tabs.vertical {
-	flex-flow: column nowrap;
-	align-items: flex-end;
+	-ms-flex-flow: column nowrap;
+	    flex-flow: column nowrap;
+	-ms-flex-align: end;
+	    -ms-grid-row-align: flex-end;
+	    align-items: flex-end;
     width: auto;
     text-align: right;
     letter-spacing: -1px;

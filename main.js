@@ -783,16 +783,16 @@ function emotionalInvolvement() {
 }
 
 function loadMaps() {
-    // mercator()
-    // gallPeters()
-    // watermanButterfly()
-    // naturalEarthVs()
-    // asiaProjections()
-    // surveyResults()
-    // asianPowerOrganizations()
-    // americaIsTheMiddle()
-    // chinaIsTheMiddle()
-    // macarthurCorrective()
+    mercator()
+    gallPeters()
+    watermanButterfly()
+    naturalEarthVs()
+    asiaProjections()
+    surveyResults()
+    asianPowerOrganizations()
+    americaIsTheMiddle()
+    chinaIsTheMiddle()
+    macarthurCorrective()
     emotionalInvolvement()
 }
 document.ready

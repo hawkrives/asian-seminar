@@ -6,6 +6,9 @@ ARGS := --debug -t [ babelify --presets [ es2015 ] ] -g uglifyify -g envify
 essay.js: main.js
 	browserify $(ARGS) $< | exorcist $@.map > $@
 
+processed.css: base.css
+	autoprefixer-cli --browsers "last 2 versions" $< -o $@
+
 
 .PHONY: watch clean
 
