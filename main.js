@@ -1,23 +1,25 @@
+require('./lib/document-ready')
+
 const d3 = require('d3')
-window.d3 = d3
 const topojson = require('topojson')
 require('d3-geo-projection')(d3)
-require('./d3-geo-polyhedron')(d3)
-require('./document-ready')
-// const _ = require('lodash')
-const sum = require('lodash/sum')
-const flatten = require('lodash/flatten')
-const identity = require('lodash/identity')
+require('./lib/d3-geo-polyhedron')(d3)
+window.d3 = d3
+window.Datamap = require('datamaps/dist/datamaps.world.js')
+
 const countBy = require('lodash/countBy')
+const flatten = require('lodash/flatten')
+const forEach = require('lodash/forEach')
+const identity = require('lodash/identity')
+const includes = require('lodash/includes')
 const max = require('lodash/max')
 const min = require('lodash/min')
-const values = require('lodash/values')
-const forEach = require('lodash/forEach')
 const round = require('lodash/round')
+const sum = require('lodash/sum')
 const uniq = require('lodash/uniq')
-const includes = require('lodash/includes')
-window.Datamap = require('datamaps/dist/datamaps.world.js')
-const littlefoot = require('./littlefoot.min.js').default
+const values = require('lodash/values')
+
+const littlefoot = require('./lib/littlefoot.min.js').default
 littlefoot()
 
 let world = {}
