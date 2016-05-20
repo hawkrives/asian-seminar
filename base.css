@@ -1,1 +1,104 @@
+@import "normalize.css";
+/* @import "node_modules/flickity/css/flickity.css"; */
+@import "node_modules/littlefoot/dist/littlefoot.css";
 
+body {
+  background: #fcfcfa;
+  margin-bottom: 30vh;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+h-map {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    position: relative;
+}
+h-map.horizontal {
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+h-map > h2 {
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+
+h-tabs {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 0 1em 0.5em;
+	max-width: 50em;
+}
+h-tabs.vertical {
+	flex-flow: column nowrap;
+	align-items: flex-end;
+    width: auto;
+    text-align: right;
+    letter-spacing: -1px;
+    max-width: auto;
+}
+h-tabs li {
+	margin-bottom: 10px;
+	display: inline-block;
+}
+h-tabs li + li {
+	margin-left: 5px;
+}
+h-tabs li input {
+	display: none;
+}
+h-tabs li label {
+	padding: 3px 5px 0;
+	color: #afafaf;
+	border-bottom: solid 4px currentColor;
+}
+h-tabs li label:hover {
+	cursor: pointer;
+}
+h-tabs li input:checked + label {
+	color: #444;
+    padding-top: 2px;
+}
+
+/* base maps */
+.stroke {
+  fill: none;
+  stroke: #000;
+  stroke-width: 3px;
+}
+
+.fill {
+  fill: #fff;
+}
+
+.graticule {
+  fill: none;
+  stroke: #777;
+  stroke-width: .5px;
+  stroke-opacity: .5;
+}
+
+.land {
+  fill: #222;
+}
+
+.boundary {
+  fill: none;
+  stroke: #fff;
+  stroke-width: .5px;
+}
+
+
+.littlefoot-footnote__content {
+	min-width: 130px;
+}

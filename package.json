@@ -1,0 +1,37 @@
+{
+  "name": "asian-seminar",
+  "version": "1.0.0",
+  "description": "My final project for ASIAN 399, the Asian Studies Senior Seminar at St. Olaf College",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hawkrives/asian-seminar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hawkrives/asian-seminar/issues"
+  },
+  "homepage": "https://github.com/hawkrives/asian-seminar#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "envify": "^3.4.0",
+    "exorcist": "^0.4.0",
+    "uglifyify": "^3.0.1",
+    "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "d3": "^3.5.17",
+    "d3-geo-projection": "^0.2.16",
+    "datamaps": "^0.5.4",
+    "littlefoot": "^1.0.0-alpha.14",
+    "lodash": "^4.12.0",
+    "topojson": "^1.6.26"
+  }
+}
