@@ -1,6 +1,5 @@
-@import "normalize.css";
-/* @import "node_modules/flickity/css/flickity.css"; */
-@import "node_modules/littlefoot/dist/littlefoot.css";
+@import "lib/normalize.css";
+@import "lib/littlefoot.min.css";
 
 body {
   background: #fcfcfa;
