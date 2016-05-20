@@ -33,13 +33,18 @@ h-map {
 
 footer {
   margin-top: 20vh;
-  text-align: center;
   color: #6c5d22;
   text-align: center;
   padding: 2mm 4mm;
 }
 footer a {
   color: inherit;
+}
+footer li.active {
+  font-weight: bold;
+}
+footer li.active a {
+  text-decoration: none;
 }
 footer h1, footer h2 {
   color: inherit;
@@ -63,7 +68,7 @@ footer p {
   text-indent: 0 !important;
 }
 
-h1, h2, p {
+h1, h2, p, ul {
   max-width: 40em;
   margin: 0 auto;
 }
